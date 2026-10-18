@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Training and test images
+shape_model/shapes/
+shape_model/zz_duds/
+shapes_dataset/
+test_shapes/
+
+# Captured game screen
+screen.png
