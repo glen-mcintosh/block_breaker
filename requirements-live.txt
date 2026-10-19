@@ -1,0 +1,3 @@
+# Calibrated reader and offline solver; ADB is a system dependency.
+numpy>=1.24
+Pillow>=10

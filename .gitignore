@@ -11,3 +11,11 @@ test_shapes/
 
 # Captured game screen
 screen.png
+
+# Live screenshots and calibration previews
+captures/
+
+# Historical collection names (older versions may still write here)
+unclassified/
+
+verified_shapes/

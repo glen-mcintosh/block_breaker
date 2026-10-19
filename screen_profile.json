@@ -1,0 +1,119 @@
+{
+  "name": "Block Blast - Waydroid 450x1000, adaptive theme recognition",
+  "screen_size": [
+    450,
+    1000
+  ],
+  "board_box": [
+    25,
+    242,
+    425,
+    642
+  ],
+  "tray_boxes": [
+    [
+      15,
+      690,
+      150,
+      820
+    ],
+    [
+      150,
+      690,
+      300,
+      820
+    ],
+    [
+      300,
+      690,
+      435,
+      820
+    ]
+  ],
+  "empty_rgb": [
+    123,
+    60,
+    66
+  ],
+  "filled_rgb": [
+    239,
+    97,
+    140
+  ],
+  "board_color_tolerance": 30,
+  "piece_color_tolerance": 25,
+  "theme_probe": [
+    225,
+    900
+  ],
+  "background_rgb": [
+    239,
+    166,
+    173
+  ],
+  "variants": [
+    {
+      "name": "Block Blast - Waydroid portrait blue theme",
+      "background_rgb": [
+        57,
+        81,
+        148
+      ],
+      "empty_rgb": [
+        33,
+        44,
+        82
+      ],
+      "filled_rgb": [
+        231,
+        178,
+        49
+      ],
+      "filled_palette": [
+        [
+          231,
+          178,
+          49
+        ],
+        [
+          132,
+          81,
+          214
+        ],
+        [
+          57,
+          93,
+          222
+        ],
+        [
+          198,
+          48,
+          49
+        ],
+        [
+          49,
+          182,
+          57
+        ],
+        [
+          41,
+          178,
+          222
+        ],
+        [
+          231,
+          113,
+          33
+        ]
+      ],
+      "piece_color_tolerance": 18
+    }
+  ],
+  "drag": {
+    "calibrated": true,
+    "gain": 1.5,
+    "lift_y": 110,
+    "note": "450x1000 Waydroid: measured by holding and moving the red corner piece; verify each move."
+  },
+  "recognition": "adaptive"
+}

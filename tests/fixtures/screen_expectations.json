@@ -1,0 +1,326 @@
+[
+  {
+    "path": "captures/session-20261018T221850-2f2c11/0001-after.png",
+    "board": "0000000000000d0f",
+    "pieces": [
+      null,
+      null,
+      "t_up"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T221850-2f2c11/0001-before.png",
+    "board": "0000000000000103",
+    "pieces": [
+      null,
+      "square_2",
+      "t_up"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T221926-2dbbcb/0001-before.png",
+    "board": "0000000000000d0f",
+    "pieces": [
+      null,
+      null,
+      "t_up"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T221926-2dbbcb/stopped.png",
+    "board": "0000000000070f0f",
+    "pieces": [
+      "l_inv_3",
+      "l_inv_3",
+      "line_5_h"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222038-fc35aa/0001-after.png",
+    "board": "000000000007ef2f",
+    "pieces": [
+      null,
+      "l_inv_3",
+      "line_5_h"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222038-fc35aa/0001-before.png",
+    "board": "0000000000070f0f",
+    "pieces": [
+      "l_inv_3",
+      "l_inv_3",
+      "line_5_h"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222038-fc35aa/0002-after.png",
+    "board": "000000000000ef2f",
+    "pieces": [
+      null,
+      "l_inv_3",
+      null
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222038-fc35aa/0002-before.png",
+    "board": "000000000007ef2f",
+    "pieces": [
+      null,
+      "l_inv_3",
+      "line_5_h"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222038-fc35aa/0003-before.png",
+    "board": "000000000000ef2f",
+    "pieces": [
+      null,
+      "l_inv_3",
+      null
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222038-fc35aa/stopped.png",
+    "board": "000000000070002f",
+    "pieces": [
+      "line_4_h",
+      "ang_2_right_up",
+      "square_2"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0001-after.png",
+    "board": "0000000000700f2f",
+    "pieces": [
+      null,
+      "ang_2_right_up",
+      "square_2"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0001-before.png",
+    "board": "000000000070002f",
+    "pieces": [
+      "line_4_h",
+      "ang_2_right_up",
+      "square_2"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0002-after.png",
+    "board": "0000000000703f3f",
+    "pieces": [
+      null,
+      null,
+      "square_2"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0002-before.png",
+    "board": "0000000000700f2f",
+    "pieces": [
+      null,
+      "ang_2_right_up",
+      "square_2"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0003-after.png",
+    "board": "0000000000700000",
+    "pieces": [
+      "line_4_v",
+      "l_inv_3",
+      "ang_2_right_down"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0003-before.png",
+    "board": "0000000000703f3f",
+    "pieces": [
+      null,
+      null,
+      "square_2"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0004-after.png",
+    "board": "0000000080f08080",
+    "pieces": [
+      null,
+      "l_inv_3",
+      "ang_2_right_down"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0004-before.png",
+    "board": "0000000000700000",
+    "pieces": [
+      "line_4_v",
+      "l_inv_3",
+      "ang_2_right_down"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0005-after.png",
+    "board": "0000000080f78180",
+    "pieces": [
+      null,
+      null,
+      "ang_2_right_down"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0005-before.png",
+    "board": "0000000080f08080",
+    "pieces": [
+      null,
+      "l_inv_3",
+      "ang_2_right_down"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0006-after.png",
+    "board": "0000000080009980",
+    "pieces": [
+      "zig_4",
+      "line_4_h",
+      "line_3_h"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0006-before.png",
+    "board": "0000000080f78180",
+    "pieces": [
+      null,
+      null,
+      "ang_2_right_down"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0007-after.png",
+    "board": "0000000080009f83",
+    "pieces": [
+      null,
+      "line_4_h",
+      "line_3_h"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0007-before.png",
+    "board": "0000000080009980",
+    "pieces": [
+      "zig_4",
+      "line_4_h",
+      "line_3_h"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0008-after.png",
+    "board": "000000008f009f83",
+    "pieces": [
+      null,
+      null,
+      "line_3_h"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0008-before.png",
+    "board": "0000000080009f83",
+    "pieces": [
+      null,
+      "line_4_h",
+      "line_3_h"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0009-after.png",
+    "board": "0000000000009f83",
+    "pieces": [
+      "line_4_h",
+      "ang_2_left_up",
+      "square_3"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0009-before.png",
+    "board": "000000008f009f83",
+    "pieces": [
+      null,
+      null,
+      "line_3_h"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0010-after.png",
+    "board": "0000000000009fbf",
+    "pieces": [
+      null,
+      "ang_2_left_up",
+      "square_3"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0010-before.png",
+    "board": "0000000000009f83",
+    "pieces": [
+      "line_4_h",
+      "ang_2_left_up",
+      "square_3"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/0011-before.png",
+    "board": "0000000000009fbf",
+    "pieces": [
+      null,
+      "ang_2_left_up",
+      "square_3"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T222435-4ae46f/stopped.png",
+    "board": "0000000000000000",
+    "pieces": [
+      null,
+      null,
+      "square_3"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T223359-61af63/stopped.png",
+    "board": "080c1fa5a72e6e0f",
+    "pieces": [
+      "square_2",
+      "ang_3_right_down",
+      "l_3"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T231511-902a87/stopped.png",
+    "board": "a887e7bfba7cccf3",
+    "pieces": [
+      "l_inv_3",
+      "l_3",
+      "zz_single"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T233753-534568/stopped.png",
+    "board": "a887e7bfba7cccf3",
+    "pieces": [
+      "l_inv_3",
+      "l_3",
+      "zz_single"
+    ]
+  },
+  {
+    "path": "captures/session-20261018T233812-996189/stopped.png",
+    "board": "a8bfefbfbf7dcff3",
+    "pieces": [
+      "zz_single",
+      "sla_left_2",
+      "zz_single"
+    ]
+  }
+]
