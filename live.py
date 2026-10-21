@@ -3,6 +3,7 @@ import argparse
 from dataclasses import asdict
 from datetime import datetime, timezone
 from io import BytesIO
+from itertools import count
 import json
 from pathlib import Path
 import subprocess
@@ -50,6 +51,8 @@ def describe(state):
 def play(serial, profile, output, dataset, moves, *, collect_verified=False,
          verified_dataset=DEFAULT_VERIFIED_DATASET, failed_dataset=DEFAULT_FAILED_DATASET,
          drag_retries=1):
+    if moves<0:
+        raise ValueError('moves must be zero (unlimited) or positive')
     if not 0<=drag_retries<=3:
         raise ValueError('drag_retries must be between 0 and 3')
     session = output / ('session-'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')+'-'+uuid4().hex[:6])
@@ -59,7 +62,8 @@ def play(serial, profile, output, dataset, moves, *, collect_verified=False,
     record=None
     pending=None
     try:
-        for step in range(1,moves+1):
+        steps=count(1) if moves==0 else range(1,moves+1)
+        for step in steps:
             image,state=wait_stable(grab,profile)
             last_image=image
             save_preview(image,profile,state,output)
@@ -201,7 +205,7 @@ def main():
     parser.add_argument('--interval',type=float,default=.5,help='Watch polling interval in seconds')
     parser.add_argument('--drag-retries',type=int,default=1,choices=range(0,4),
                         help='Retries after a proven unchanged board/tray (default: 1, maximum: 3)')
-    parser.add_argument('--moves',type=int,default=1,help='Maximum moves to play (default: 1)')
+    parser.add_argument('--moves',type=int,default=1,help='Maximum moves to play; 0 means unlimited (default: 1)')
     args = parser.parse_args()
     if (args.play or args.watch) and args.image:
         parser.error('--play/--watch cannot be used with a saved image')
@@ -209,8 +213,8 @@ def main():
         parser.error('--collect-verified requires --play')
     if args.interval<=0:
         parser.error('--interval must be positive')
-    if args.moves<1:
-        parser.error('--moves must be positive')
+    if args.moves<0:
+        parser.error('--moves must be zero (unlimited) or positive')
     try:
         profile = load_profile(args.profile)
         args.output.mkdir(parents=True,exist_ok=True)

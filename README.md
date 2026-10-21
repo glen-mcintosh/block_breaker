@@ -387,3 +387,15 @@ per-attempt before/held screenshot paths. The ordinary step before/after files
 remain available for compatibility. The saved gray-theme corner failure was
 successfully replayed live with this check: all five held target cells matched,
 the piece was released, the expected row cleared, and the next tray verified.
+
+
+To play without a move-count limit:
+
+```sh
+python -u live.py --play --moves 0
+```
+
+Add `--collect-verified` to also collect verified training examples. Unlimited
+mode still stops on no legal moves, recognition/verification failures, or Ctrl+C;
+it does not restart games or dismiss ads. Positive `--moves` values retain the
+bounded behavior, and the default remains one move.

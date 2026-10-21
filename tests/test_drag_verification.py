@@ -133,6 +133,18 @@ class RetryLoopTests(unittest.TestCase):
             self.assertIsNotNone(error)
             self.assertEqual(count,1)
 
+    def test_unlimited_moves_continue_after_success_and_still_stop_when_no_move_exists(self):
+        from live import play
+        p,im1,im2,before,after,move=frames()
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            with patch('live.wait_stable',side_effect=[(im1,before),(im1,before),(im2,after),(im2,after)]),patch('live.best_moves',side_effect=[SimpleNamespace(moves=[move],elapsed_ms=0),SimpleNamespace(moves=[],elapsed_ms=0)]) as solve,patch('live.plan_drag',return_value=Drag((1,1),(2,2))),patch('live.send_drag') as send,contextlib.redirect_stdout(io.StringIO()):
+                play('test',p,root,root/'raw',0,failed_dataset=root/'failed')
+            self.assertEqual(solve.call_count,2)
+            send.assert_called_once()
+            records=[json.loads(line) for line in next(root.glob('session-*/moves.jsonl')).read_text().splitlines()]
+            self.assertEqual(records[-1]['status'],'verified')
+
     def test_zero_retry_option_stops_after_first_unchanged_attempt(self):
         p,im1,im2,before,after,move=frames()
         error,count,_,_=self.run_player([(im1,before)]*3,retries=0)
